@@ -13,6 +13,7 @@ defmodule InstantElixir do
       supervisor(InstantElixir.Repo, []),
       # Here you could define other workers and supervisors as children
       # worker(InstantElixir.Worker, [arg1, arg2, arg3]),
+      supervisor(InstantElixir.ReactIo, [])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html

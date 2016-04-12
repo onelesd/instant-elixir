@@ -17,6 +17,8 @@ defmodule InstantElixir.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+
+    forward "/app", SinglePageController, :index
   end
 
   # Other scopes may use custom stacks.
