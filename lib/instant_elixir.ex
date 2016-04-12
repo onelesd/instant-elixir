@@ -10,7 +10,8 @@ defmodule InstantElixir do
       # Start the endpoint when the application starts
       supervisor(InstantElixir.Endpoint, []),
       # Start the Ecto repository
-      supervisor(InstantElixir.Repo, []),
+      #supervisor(InstantElixir.Repo, []),
+      worker(InstantElixir.Repo, []),
       # Here you could define other workers and supervisors as children
       # worker(InstantElixir.Worker, [arg1, arg2, arg3]),
       supervisor(InstantElixir.ReactIo, [])

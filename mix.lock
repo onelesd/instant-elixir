@@ -16,4 +16,6 @@
   "porcelain": {:hex, :porcelain, "2.0.1"},
   "postgrex": {:hex, :postgrex, "0.11.1"},
   "ranch": {:hex, :ranch, "1.2.1"},
+  "rethinkdb": {:hex, :rethinkdb, "0.4.0"},
+  "rethinkdb_changefeed": {:hex, :rethinkdb_changefeed, "0.0.1"},
   "std_json_io": {:hex, :std_json_io, "0.1.0"}}

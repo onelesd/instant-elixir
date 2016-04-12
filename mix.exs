@@ -18,8 +18,9 @@ defmodule InstantElixir.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {InstantElixir, []},
-     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :std_json_io]]
+     applications: [:phoenix, :phoenix_html, :cowboy, :logger, 
+                    :gettext, :phoenix_ecto, :std_json_io,
+                    :rethinkdb, :rethinkdb_changefeed]]
   end
 
   # Specifies which paths to compile per environment.
@@ -31,13 +32,14 @@ defmodule InstantElixir.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [{:phoenix, "~> 1.1.4"},
-     {:postgrex, ">= 0.0.0"},
      {:phoenix_ecto, "~> 2.0"},
      {:phoenix_html, "~> 2.4"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"},
-     {:std_json_io, "~> 0.1.0"}]
+     {:std_json_io, "~> 0.1.0"},
+     {:rethinkdb, "~> 0.4.0"},
+     {:rethinkdb_changefeed, "~> 0.0.1"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
