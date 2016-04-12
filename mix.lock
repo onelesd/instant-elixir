@@ -18,4 +18,5 @@
   "ranch": {:hex, :ranch, "1.2.1"},
   "rethinkdb": {:hex, :rethinkdb, "0.4.0"},
   "rethinkdb_changefeed": {:hex, :rethinkdb_changefeed, "0.0.1"},
+  "rethinkdb_ecto": {:git, "https://github.com/hamiltop/rethinkdb_ecto.git", "73f6627a60098c84b2c043918f071ab34adf63b0", []},
   "std_json_io": {:hex, :std_json_io, "0.1.0"}}

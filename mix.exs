@@ -19,8 +19,7 @@ defmodule InstantElixir.Mixfile do
   def application do
     [mod: {InstantElixir, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, 
-                    :gettext, :phoenix_ecto, :std_json_io,
-                    :rethinkdb, :rethinkdb_changefeed]]
+                    :gettext, :std_json_io, :rethinkdb, :rethinkdb_changefeed]]
   end
 
   # Specifies which paths to compile per environment.
@@ -32,7 +31,6 @@ defmodule InstantElixir.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [{:phoenix, "~> 1.1.4"},
-     {:phoenix_ecto, "~> 2.0"},
      {:phoenix_html, "~> 2.4"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
